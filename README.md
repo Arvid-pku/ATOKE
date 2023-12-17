@@ -100,14 +100,31 @@ The dataset is saved as a list of dicts, each of which represents a data instanc
 
 
 ## Evaluation
+We evaluate the model's ability to edit temporal knowledge in terms of two dimensions: the time at which the model is questioned (historical, current) and the form of the time at which it is questioned (relative, explicit).
+
+|          | Historical                                    | Current                                    |
+| -------- | --------------------------------------------- | ------------------------------------------ |
+| Relative | Historical Relative time Question Score (**HRS**) | Current Relative time Question Score (**CRS**) |
+| Explicit | Historical Explicit time Question Score (**HES**) | Current Explicit time Question Score (**CES**) |
+
+In addition, we eliminate the effect of question description by paraphrasing the question. We measure this as the **Paraphrase Question Score**.
+
+Examples are as follows:
+- time:
+    - historical: "Billy Wrigglesworth used to play for"
+    - current: "Billy Wrigglesworth's team is"
+- time form:
+    - relative: "Billy Wrigglesworth's team is"
+    - explicit: "From 1947 to 1948, Billy Wrigglesworth is a player of"
+    - paraphrase: "From 1948 to 1953, Billy Wrigglesworth plays for"
+
+
+## METO
 
 
 
-
-
-
-
-
+## Issues or Questions?
+If you come across any issues while using the datasets or have any questions regarding the repository or the paper, please don't hesitate to reach out. You can contact Xunjian Yin at (xjyin@pku.edu.cn) or create an issue.
 
 ## Citation
 If you use our code in your research, please cite our work:
