@@ -116,7 +116,7 @@ Examples are as follows:
 - time form:
     - relative: "Billy Wrigglesworth's team is"
     - explicit: "From 1947 to 1948, Billy Wrigglesworth is a player of"
-    - paraphrase: "From 1948 to 1953, Billy Wrigglesworth plays for"
+    - paraphrase: "From 1947 to 1948, Billy Wrigglesworth plays for"
 
 
 ## METO
